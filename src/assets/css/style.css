@@ -1,0 +1,312 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background-color: #161616;
+}
+h1 {
+  line-height: 1.2 !important;
+}
+
+/* Social */
+.about {
+  position: fixed;
+  z-index: 10;
+  bottom: 3rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.2s ease;
+}
+.about .bg_links {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #62d2e0;
+  border-radius: 100%;
+  backdrop-filter: blur(5px);
+  position: absolute;
+}
+.about .bg_links:hover,
+.logo:hover,
+.teal:hover {
+  filter: drop-shadow(0 0 2em #62d2e0);
+}
+.about .logo {
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-image: url('../icons/paper-plane.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 10px 7px;
+  opacity: 0.9;
+  transition: all 1s 0.2s ease;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background-position: center center;
+}
+.about .social {
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+}
+.about .social .icon {
+  width: 100%;
+  height: 100%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  display: flex;
+  transition: all 0.2s ease, background-color 0.4s ease;
+  opacity: 0;
+  border-radius: 100%;
+}
+.about .social.facebook {
+  transition: all 0.8s ease;
+}
+.about .social.facebook .icon {
+  background-image: url('../icons/facebook.svg');
+}
+.about .social.instagram {
+  transition: all 0.3s ease;
+}
+.about .social.instagram .icon {
+  background-image: url('../icons/instagram.svg');
+}
+.about .social.linkedin {
+  transition: all 0.8s ease;
+}
+.about .social.linkedin .icon {
+  background-image: url('../icons/linkedin.svg');
+}
+.about:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .logo {
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+.about:hover .social {
+  opacity: 1;
+}
+.about:hover .social .icon {
+  opacity: 0.9;
+}
+.about:hover .social:hover {
+  background-size: 28px;
+}
+.about:hover .social:hover .icon {
+  background-size: 65%;
+  opacity: 1;
+}
+.about:hover .social.facebook {
+  right: 0;
+  bottom: calc(100% - 40px);
+  transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.facebook .icon:hover {
+  background-color: #698fb7;
+}
+.about:hover .social.instagram {
+  bottom: 45%;
+  right: 45%;
+  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.instagram .icon:hover {
+  background-color: #cc3b9f;
+
+}
+.about:hover .social.linkedin {
+  bottom: 0;
+  right: calc(100% - 40px);
+  transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.linkedin .icon:hover {
+  background-color: #0077b5;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 240px;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
+.sidebar.is-open {
+  transform: translateX(0);
+}
+.menu-items .border-menu {
+  display: block;
+  width: 3px;
+  height: 2.5rem;
+  border-radius: 10px;
+  background: transparent;
+}
+.menu-items .border-menu.active,
+.menu-items li:hover .border-menu {
+  background: white;
+}
+.menu-items li:hover a {
+  color: white;
+}
+.mobile-menu {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  right: 1.5rem;
+  top: 20px;
+}
+.mobile-menu:focus {
+  outline: none;
+}
+.mobile-menu .bar-one,
+.mobile-menu .bar-two,
+.mobile-menu .bar-three {
+  width: 2rem;
+  height: 0.25rem;
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+.mobile-menu .bar-one {
+  transform: rotate(0);
+}
+.mobile-menu .bar-two {
+  opacity: 1;
+  transform: translateX(0);
+}
+.mobile-menu .bar-three {
+  transform: rotate(0);
+}
+.open .bar-one {
+  transform: rotate(45deg);
+}
+.open .bar-two {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.open .bar-three {
+  transform: rotate(-45deg);
+}
+.mobile-nav-wrapper {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #97c4b7;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 0%;
+  transition: opacity 0.75s, visibility 0.75s, height 0.75s;
+  overflow: hidden;
+}
+
+/* Services */
+.wrapper {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  height: 100%;
+}
+.wrapper__scroll {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.wrapper__item {
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper__item:not(:nth-child(2)) {
+  color: #fff;
+}
+.wrapper__item:nth-child(1) {
+  background-color: #92dce5;
+}
+.wrapper__item:nth-child(2) {
+  background-color: #eee5e9;
+}
+.wrapper__item:nth-child(3) {
+  background-color: #d64933;
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b303a;
+  padding: 1rem;
+}
+.bar a {
+  color: #fff;
+  text-decoration: none;
+}
+.bar a::after {
+  display: block;
+  content: '';
+  height: 2px;
+  width: 100%;
+  transform: scale(0);
+  transition: transform 0.45s ease-in;
+}
+.bar a:hover::after {
+  transform: scale(1);
+}
+.bar a:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+/* Carousel */
+.carousel__pagination-button::after {
+  width: 0.75rem !important;
+  height: 0.75rem !important;
+  border-radius: 50% !important;
+  background-color: #E8F3F1 !important;
+}
+
+.carousel__pagination-button:hover::after,
+.carousel__pagination-button--active::after {
+  background-color: #62d2e0 !important;
+}
+
+/* UIcon */
+.icon svg{
+  height: 1.5rem;
+  fill: currentColor;
+  color: white;
+}
