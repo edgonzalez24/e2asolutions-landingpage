@@ -51,12 +51,16 @@
     </div>
     <div class="mx-auto flex justify-center">
       <div class="inline-flex items-center flex-row space-x-3">
-        <a 
+        <a
+          id="cta-es"
+            href="#"
           class="rounded py-1 px-3 text-xs font-bold transition duration-500 ease-in hover:bg-teal hover:text-white cursor-pointer teal"
           :class="locale === 'es' ? 'bg-teal text-white' : 'text-gray-300'"
           @click="locale = 'es'"
         >ES</a>
         <a 
+          id="cta-en"
+          href="#"
           class="rounded py-1 px-3 text-xs font-bold transition duration-500 ease-in hover:bg-teal hover:text-white cursor-pointer teal"
           :class="locale === 'en' ? 'bg-teal text-white' : 'text-gray-300'"
           @click="locale = 'en'"

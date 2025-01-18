@@ -88,11 +88,8 @@ h1 {
 .about .social.instagram .icon {
   background-image: url('../icons/instagram.svg');
 }
-.about .social.linkedin {
-  transition: all 0.8s ease;
-}
-.about .social.linkedin .icon {
-  background-image: url('../icons/linkedin.svg');
+.about .social.whatsapp .icon {
+  background-image: url('../icons/whatsapp.svg');
 }
 .about:hover {
   width: 105px;
@@ -131,15 +128,14 @@ h1 {
 }
 .about:hover .social.instagram .icon:hover {
   background-color: #cc3b9f;
-
 }
-.about:hover .social.linkedin {
+.about:hover .social.whatsapp {
   bottom: 0;
   right: calc(100% - 40px);
-  transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 }
-.about:hover .social.linkedin .icon:hover {
-  background-color: #0077b5;
+.about:hover .social.whatsapp .icon:hover {
+  background-color: #25D366;
 }
 
 /* Sidebar */

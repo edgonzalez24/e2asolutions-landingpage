@@ -16,13 +16,13 @@
       </div>
       <div class="mt-10">
         <div class="inline-flex items-center">
-          <img src="../assets/icons/email.svg" alt="" class="h-6 w-6 mr-5">
+          <img src="../assets/icons/email.svg" alt="mail icon" class="h-6 w-6 mr-5">
           <a href="mailto:easolutions45@gmail.com?Subject=Interesado%20en%20trabajar%20juntos" class="text-gray-300 underline">easolutions45@gmail.com</a>
         </div>
       </div>
       <div class="mt-10">
         <div class="inline-flex items-center">
-          <img src="../assets/icons/phone.svg" alt="" class="h-6 w-6 mr-5">
+          <img src="../assets/icons/phone.svg" alt="phone icon" class="h-6 w-6 mr-5">
           <div>
             <a href="tel:+50370080848" class="text-gray-300 block">(503) 70080848</a>
           </div>

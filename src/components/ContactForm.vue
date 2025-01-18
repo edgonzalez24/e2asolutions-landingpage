@@ -62,6 +62,7 @@
         text: t('email-success')
       }
     } catch (error) {
+      console.log("🚀 ~ error:", error)
       alert.value = {
         active: true,
         type: 'error',

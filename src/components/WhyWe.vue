@@ -14,7 +14,7 @@
     <div class="w-full flex md:flex-row flex-col md:space-x-12 lg:mt-20 mt-10">
       <div class="lg:w-1/2 w-full lg:mb-0 mb-12">
         <Levitate :duration="2000" :positionLevitateY="10" :delay="50" :positionInitialY="0">
-          <img src="../assets/images/quality.webp" alt="" class="" style="transform: rotate(-6deg);">
+          <img src="../assets/images/quality.webp" alt="quality image" class="" style="transform: rotate(-6deg);">
         </Levitate>
       </div>
       <div class="lg:w-1/2 w-full">
@@ -31,14 +31,14 @@
       </div>
       <div class="lg:w-1/2 w-full lg:order-last order-first lg:mb-0 mb-12">
         <Levitate :duration="2000" :positionLevitateY="10" :delay="50" :positionInitialY="0">
-          <img src="../assets/images/wiframe.webp" alt="" class="" style="transform: rotate(6deg);">
+          <img src="../assets/images/wiframe.webp" alt="wiframe image" class="" style="transform: rotate(6deg);">
         </Levitate>
       </div>
     </div>
     <div class="w-full flex md:flex-row flex-col md:space-x-12 lg:mt-20 mt-10">
       <div class="lg:w-1/2 w-full lg:mb-0 mb-12">
         <Levitate :duration="2000" :positionLevitateY="10" :delay="50" :positionInitialY="0">
-          <img src="../assets/images/reliable.webp" alt="" class="" style="transform: rotate(-6deg);">
+          <img src="../assets/images/reliable.webp" alt="reliable image" class="" style="transform: rotate(-6deg);">
         </Levitate>
       </div>
       <div class="lg:w-1/2 w-full">

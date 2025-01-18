@@ -1,12 +1,18 @@
 <template>
   <div>
     <div class="about">
-      <a class="bg_links social facebook" href="https://www.facebook.com/profile.php?id=100091637455145" target="_blank">
+      <a id="cta-fb" class="bg_links social facebook" href="https://www.facebook.com/profile.php?id=100091637455145"
+        target="_blank">
         <span class="icon"></span>
       </a>
-      <!-- <a class="bg_links social instagram" href="https://www.instagram.com/boxtechcompany/" target="_blank">
+      <a id="cta-instagram" class="bg_links social instagram" href="https://www.instagram.com/e2a_solutions/"
+        target="_blank">
         <span class="icon"></span>
-      </a> -->
+      </a>
+      <a id="cta-whatsapp" class="bg_links social whatsapp" href="https://web.whatsapp.com/send?phone=503700080848"
+        target="_blank">
+        <span class="icon"></span>
+      </a>
       <a class="bg_links logo"></a>
     </div>
   </div>
