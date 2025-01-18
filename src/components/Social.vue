@@ -13,7 +13,7 @@
         target="_blank">
         <span class="icon"></span>
       </a>
-      <a class="bg_links logo"></a>
+      <a id="cta-icon" class="bg_links logo" href="#"></a>
     </div>
   </div>
 </template>
