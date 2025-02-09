@@ -2,13 +2,13 @@
   import { useI18n } from 'vue-i18n';
 
   const { t } = useI18n();
-  const gretting = '¡Hola! 👋 Somos E2A Solutions, Transformamos tus ideas en éxito digital. 🚀 Cuéntanos cómo podemos ayudarte con tu proyecto. ¡Escríbenos!';
+  const gretting = '¡Hola! Somos E2A Solutions, Transformamos tus ideas en éxito digital. Cuéntanos cómo podemos ayudarte con tu proyecto. ¡Escríbenos!';
   const phone = '50369940940';
 </script>
 <template>
   <a 
     id="cta-contact" 
-    :href="`https://web.whatsapp.com/send?phone=${phone}&text=${gretting}`" 
+    :href="`https://wa.me/${phone}?text=${gretting}`" 
     target="_blank"
     class="inline-flex items-center py-2 border border-transparent rounded-md font-semibold sm:text-base text-sm tracking-normal focus:outline-none focus:ring disabled:opacity-25 w-full justify-center bg-teal focus:ring-gray-500 focus:border-gray-900 transition duration-500 ease-in-out hover:opacity-90 text-white"
   >

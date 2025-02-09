@@ -9,8 +9,7 @@
 
 <template>
   <div id="home" :class="locale === 'es' ? 'lg:w-1/2' : 'lg:w-2/3'" class="relative block w-full">
-    <h1 
-      v-motion-slide-visible-once-right 
+    <h1
       v-html="t('transform-your-idea', { class: 'text-teal'})"
       class="md:text-7xl text-4xl font-poppins font-bold text-white tracking-wide"
     >
