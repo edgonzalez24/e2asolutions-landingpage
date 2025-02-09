@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  const gretting = '¡Hola! 👋 Somos E2A Solutions, Transformamos tus ideas en éxito digital. 🚀 Cuéntanos cómo podemos ayudarte con tu proyecto. ¡Escríbenos!';
+  const gretting = '¡Hola! Somos E2A Solutions, Transformamos tus ideas en éxito digital. Cuéntanos cómo podemos ayudarte con tu proyecto. ¡Escríbenos!';
   const phone = '50369940940';
 </script>
 <template>
@@ -24,7 +24,7 @@
       <a 
         id="cta-whatsapp" 
         class="bg_links social whatsapp" 
-        :href="`https://web.whatsapp.com/send?phone=${phone}&text=${gretting}`" 
+        :href="`https://wa.me/${phone}?text=${gretting}`" 
         target="_blank"
       >
         <span class="icon"></span>
